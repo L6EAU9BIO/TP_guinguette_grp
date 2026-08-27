@@ -7,7 +7,11 @@ Realiser la liste de taches
 
 ## Tache 2
 Mettre en place une base de donnée PostgreSQL via Docker 
-[] fait
+[x] fait
 
-##
+## Tache 3
+mettre le .env a jour 
+[x] fait 
+
+
 
