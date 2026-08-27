@@ -1,0 +1,24 @@
+{
+  "name": "tp_guinguette_grp",
+  "version": "1.0.0",
+  "description": "Jean-Michel est patron d’une petite guinguette sur la plage de Audinghen. Cet été, la demande de churros et autre snack balnéaire a explosé suite à une arrivée massive de nouveaux touristes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L6EAU9BIO/TP_guinguette_grp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/L6EAU9BIO/TP_guinguette_grp/issues"
+  },
+  "homepage": "https://github.com/L6EAU9BIO/TP_guinguette_grp#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

@@ -16,3 +16,8 @@ Mettre le .env a jour
 
 Connexion à la base de données via les identifiants en mettant à jour le fichier db.js. 
 [X] FAIT 
+
+
+## Tache 5
+creation des routes de la base de donnees au client 
+[] FAITt
