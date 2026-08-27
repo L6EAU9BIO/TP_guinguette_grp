@@ -1,11 +1,11 @@
+import express from "express"
+export const router = express.Router();
 
-const app = express();
-
-app.get("/", async (req, res) => {
-    res.send("Connextion etablie !");
+router.get("/", async (req, res) => {
+    res.send("Connexion etablie !");
 })
 
-app.get("/db", async (req, res) => {
+router.get("/db", async (req, res) => {
   try {
     const result = await pool.query("SELECT NOW()");
     res.json({
