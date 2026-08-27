@@ -17,6 +17,7 @@ router.get("/db", async (req, res) => {
     res.status(500).json({ error: "Erreur de connexion à la base" });
   }
 });
+<<<<<<< HEAD
 
 // Vérifie qu'un code vendeur existe
 
@@ -44,3 +45,5 @@ router.get ("/db/produits" , async (req,res) => {
 
 
 
+=======
+>>>>>>> 2ef1802f657e1600c6e72f3a082064c4a511cfbf
