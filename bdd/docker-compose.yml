@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:16
+    container_name: estival-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: guinguette
+      POSTGRES_DB: estival
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./data.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  pgdata:
