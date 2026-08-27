@@ -17,3 +17,30 @@ router.get("/db", async (req, res) => {
     res.status(500).json({ error: "Erreur de connexion à la base" });
   }
 });
+
+// Vérifie qu'un code vendeur existe
+
+router.get ("/db/vendeurs/:numero_vendeur" , async (req,res) => {
+  try {
+    const {rows} = await pool.query("SELECT id FROM vendeurs WHERE numero_vendeur = $1", [req.params.numero_vendeur] )
+    res.status(200).json({"data": rows})
+  } catch (error) {
+  console.error(error)
+  res.status(400).json({"error" : "Le numero du vendeur n'a pas été trouvé"})
+  } 
+})
+
+// Liste les produits
+
+router.get ("/db/produits" , async (req,res) => {
+  try {
+    const {rows} = await pool.query("SELECT * FROM produits")
+    res.status(200).json({"data": rows})
+  } catch(error) {
+    console.error(error)
+    res.status(400).json({"error" : "Aucun produit à lister"})
+  }
+})
+
+
+
